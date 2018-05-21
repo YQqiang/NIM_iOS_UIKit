@@ -140,7 +140,7 @@
             imageView.image = nil;
             if (item.url.length)
             {
-                [imageView sd_setImageWithURL:[NSURL URLWithString:[[NIMSDK sharedSDK].resourceManager normalizeURLString:item.thumbUrl]] placeholderImage:nil options:SDWebImageRetryFailed];
+                [imageView sd_setImageWithURL:[NSURL URLWithString:item.thumbUrl] placeholderImage:nil options:SDWebImageRetryFailed];
             }            
             [view addSubview:imageView];
         }
